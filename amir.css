@@ -1,0 +1,195 @@
+body
+{
+    background-color: rgba(4, 138, 255, 0.958);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0.2%;
+}
+.mother
+{
+    background-color: rgb(238, 170, 82);
+}
+.start
+{
+    position: sticky;
+    top: 0;
+    display: flex;
+    padding: 8px 4px;
+    border-radius: 10px;
+    background-color: rgb(30, 51, 156);
+    justify-content:space-between;
+    align-items: start;
+    box-shadow: 0px 4px 10px 2px rgb(255, 255, 255);
+
+}
+.start ul
+{
+    background-color: rgb(30, 51, 156);
+    position: relative;
+    display: flex;
+    width: 385px;  
+    height: 60px;
+    border-radius: 0px;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    gap: 8px;
+    transform: translateY(-15px);
+}
+.start ul li
+{
+    position: relative;
+    list-style: none;
+    width: 75px;
+    height: 70px;
+    z-index: 1;
+}
+.start ul li a
+{
+    font-size: 12.5px;
+    align-items:center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    color: rgb(3, 251, 251);
+    border-radius: 10px;
+    padding: 15px 10px;
+    margin: 0px 0px;
+    border: 1px solid aqua;
+    transition: all 0.7s ease;
+    text-decoration: none;
+    height: 85%;
+    width: 60%;
+}
+.start ul li.active a 
+{
+    background-color: rgba(77, 255, 190, 0.56); /* پس زمینه مشابه هاور */
+    box-shadow: 0px 0px 15px rgb(1, 255, 230); /* سایه مشابه هاور */
+    color: rgb(255, 255, 255); /* رنگ متن سفید */
+    transform: translateY(-5px); /* کمی به سمت بالا حرکت کند */
+}
+.start ul li a .icon {
+    font-size: 20px; /* اندازه آیکون را بزرگتر می‌کنیم */
+    line-height: 2; /* اطمینان از تراز عمودی درست */
+}
+/* برای متن: */
+.start ul li a .text {
+    font-weight: bold; /* متن را پررنگ‌تر می‌کند */
+    opacity: 0.45; /* کمی شفافیت برای متن */
+    transition: opacity 0.3s ease; /* انیمیشن برای شفافیت */
+}
+/* وقتی هاور یا اکتیو می‌شوند، متن کامل‌تر نمایش داده شود */
+.start ul li a:hover .text,
+.start ul li.active a .text {
+    opacity: 2;
+}
+a:hover
+{
+    transition: linear 0.5s;
+    background-color: rgba(77, 255, 190, 0.56);
+    box-shadow: 0px 0px 15px rgb(1, 255, 230);
+}
+.picture
+{
+    color: aqua; 
+    display: flex;
+}
+.picture h1
+{
+    margin: 20px  8px;
+    transition: all 0.5s linear;
+}
+h1:hover
+{
+    transition: 1s ease;
+    text-shadow: 0px 0px 10px #00ffea;
+}
+img
+{
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    box-shadow: 0px 0px 20px #00ffea;
+    transition: all 0.9s ease;
+}
+img:hover
+{
+    transform: rotate(360deg);
+    width: 280px;
+    height: 300px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgb(255, 0, 0);
+    transition: 3.5s ease;
+}
+.panl-1
+{
+    display: flex;
+    justify-content: center; /* عناصر را در وسط افقی قرار می‌دهد */
+    gap: 25px; /* فاصله بین profile-info-section و p1 */      
+    flex-wrap: wrap; /* در صورت کمبود فضا، عناصر به خط بعد می‌روند */        
+    margin-top: 10px; /* کمی فاصله از نوار ناوبری */
+}
+.profile-info-section
+{
+    padding: 30px 20px;
+    margin: 5px 1px;
+    text-align: center;
+    background-color: rgb(22, 22, 92);
+    width: 300px;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px 2px rgb(255, 255, 255);
+    transition: all 0.9s ease;
+}
+.profile-info-section:hover
+{
+    box-shadow: 0px 4px 10px 2px rgb(255, 0, 0);
+}
+.profile-info-section h1
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 1px;
+    font-size: 23px;
+    text-shadow: 0px 0px 5px rgb(64, 0, 255);
+    color: rgb(255, 0, 0);
+}
+.contact-details
+{
+    text-align: left;
+}
+.contact-details dt
+{
+    font-size: 16px;
+    padding: 12px;
+    color: rgba(0, 255, 255, 0.841);
+}
+.contact-details dd
+{
+    color: aquamarine;
+    text-align: center;
+    border: 1px solid rgba(0, 234, 117, 0.712);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(2, 209, 88, 0.803);
+    padding: 2.5px;
+}
+.p1
+{
+    margin: 0px;
+    padding: 0px;
+}
+.about-me
+{
+    background-color: rgb(230, 229, 221);
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px 2px rgb(255, 255, 255);
+    width: 400px;
+    height: 450px;
+    padding: 5px 10px;
+    margin: 5px 5px;
+    transition: 1s;
+}
+.about-me:hover
+{
+    transition: 1s;
+    box-shadow: 0px 4px 10px 2px rgb(255, 0, 0);
+}
