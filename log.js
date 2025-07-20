@@ -13,4 +13,4 @@ document.querySelector('form').addEventListener('submit', function(e) {
         document.querySelector('.error-message').style.display = "block";
         document.querySelector('.error-message').textContent = "نام کاربری یا رمز اشتباه است!";
     }
-});ض
+});
