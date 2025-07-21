@@ -1,0 +1,157 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    display: flex;
+    background: url('gif.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('fonts/angal1.woff2') format('woff2'),
+         url('fonts/angal1.woff') format('woff'),
+         url('fonts/angal1.otf') format('opentype');
+}
+.a1
+{
+
+    width: 420px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter:blur(1.2px) ;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    color: #05f2ff;
+    border-radius: 10px;
+    padding: 30px 40px ;
+
+}
+.a1 h1
+{
+    font-size: 36px;
+    text-align: center;
+}
+.a1 .input-box
+{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+.input-box input
+{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border:2px solid rgba(255,255,255,0.5) ;
+    border-radius:40px;
+    padding: 20px 45px 20px 20px;
+    font-size: 16px;
+    color: rgb(8, 247, 255);
+}
+.input-box input::placeholder
+{
+    color: rgb(3, 255, 255);
+}
+.input-box i
+{
+    position: absolute;
+    right: 20px;
+    top:50%;
+    transform:translateY(-50%);
+    font-size: 20px;
+}
+.input-box i:hover {
+    color: #2575fc;
+    transform: translateY(-50%) scale(1.2);
+    transition: all 0.3s ease;
+}
+
+.input-box input:focus {
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.a1 .remember-forgot
+{
+    display:flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: 15px 0 15px;
+}
+.remember-forgot label input
+{
+    accent-color: #d00606;
+    margin: 3px;
+}
+.remember-forgot a
+{
+    color: #05f2ff;
+    text-decoration: none;
+}
+.remember-forgot a:hover
+{
+    text-decoration: underline;
+}
+.a1 .btn
+{
+    width: 100%;
+    height: 45px;
+    background: #05f2ff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0,0,0,.51);
+    font-size: 16px;
+    color: #333;
+    font-weight:600;
+}
+.a1 .btn:hover {
+    background: #04c2e0;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
+/* این بخش را پیدا کن */
+.a1 .rgister-link
+{
+    font-size: 14px;
+    text-align: center;
+    margin-top: 20px 0 15px ;
+}
+.rgister-link p a
+{
+    color: #ff0505;
+    text-decoration: none;
+    font-weight: 600;
+}
+.rgister-link p a:hover
+{
+    text-decoration: underline;
+}
+/* و به این تغییرش بده */
+.a1 .register-link /* اینجا تغییر کرد */
+{
+    font-size: 14px;
+    text-align: center;
+    margin: 20px 0 15px; /* تصحیح margin-top */
+}
+.register-link p a /* اینجا تغییر کرد */
+{
+    color: #ff0505;
+    text-decoration: none;
+    font-weight: 600;
+}
+.register-link p a:hover /* اینجا تغییر کرد */
+{
+    text-decoration: underline;
+}
