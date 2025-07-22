@@ -15,7 +15,7 @@ document.querySelector("form").addEventListener("submit", (event) => {
     // Validation logic
     if (username === "admin" && password === "12345") {
         // Redirect to Freeking.html in the Freeking folder
-        window.location.href = "web.html";
+        window.location.href = "../Log/web.html";
     } else {
         // Display an error message
         displayError("Invalid username or password. Please try again.");
